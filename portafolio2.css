@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background-color: #121212;
+    padding: 18px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px; /* Tamaño del texto reducido */
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    flex: 0;
+    background-color: #1CB698;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-personal {
+    margin-bottom: 20px; /* Espacio reducido entre la imagen y el texto */
+}
+
+.info-personal .foto {
+    width: 80px; /* Tamaño de la foto reducido */
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 3px solid black;
+}
+
+.info-personal {
+    font-size: 16px; /* Tamaño del texto reducido */
+    color: #fff;
+}
+
+.info-personal p {
+    font-size: 14px; /* Tamaño del texto reducido */
+    color: white;
+}
+
+.portada {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/fondo\ original.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.portada h1 {
+    font-size: 48px; /* Tamaño del texto reducido */
+    color: #fff;
+}
+
+.portada h1 .rojo {
+    color: #1CB698;;
+}
+
+.portada p {
+    font-size: 28px; /* Tamaño del texto reducido */
+    color: #fff;
+}
+
+.boton {
+    display: block;
+    width: 160px; /* Ancho del botón reducido */
+    margin: 0 auto;
+    background-color: transparent;
+    border: 3px solid white;
+    margin-top: 20px; /* Espacio reducido entre el botón y el texto */
+    padding: 8px 0; /* Espacio reducido dentro del botón */
+    border-radius: 40px; /* Borde del botón reducido */
+    color: #fff;
+    font-size: 16px; /* Tamaño del texto reducido */
+}
+
+.boton:hover {
+    background-color: #000;
+}
+
+.portafolio:hover {
+    width: 180px; /* Ancho de la caja reducido */
+    transition: background-color 0.3s, width 0.3s, height 0.3s;
+}
+
+.cajas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portafolio {
+    background-color: black;
+    width: 250px; /* Ancho de la caja reducido */
+    border: 3px solid #fff;
+    text-align: center;
+    padding: 8px; /* Espacio reducido dentro de la caja */
+    margin: 8px; /* Espacio reducido entre las cajas */
+}
+
+.portafolio img {
+    width: 103%;
+    height: auto;
+}
+
+.portafolio a {
+    display: block;
+    margin-top: 2px; /* Espacio reducido entre el texto y el enlace */
+    text-decoration: none;
+    color: white;
+}
+
+.imagen {
+    width: 60px; /* Tamaño de la imagen reducido */
+    height: 60px; /* Tamaño de la imagen reducido */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 8px; /* Espacio reducido entre las imágenes */
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
